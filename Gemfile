@@ -1,12 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.11'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', '1.3.3'
-gem 'rails', '3.0.11'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -28,10 +27,10 @@ gem 'rails', '3.0.11'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
  group :development do
-   gem 'rspec-rails', '2.6.1'
+   gem 'rspec-rails'
  end
 
  group :test do
-   gem 'rspec-rails', '2.6.1'
-   gem 'webrat', '0.7.1'
+   gem 'rspec-rails'
+   gem 'webrat'
  end

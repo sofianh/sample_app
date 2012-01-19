@@ -4,16 +4,17 @@
   <!--title>Ruby on Rails Tutorial Sample | <%= @title %></title-->
   <!-- using the title helper that is defined in application_helper.rb -->
   <title><%= title %></title>
-  <%= stylesheet_link_tag :all %>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
-
-<h1>Sofian's Awesome App</h1>
-<hr>
-
-<%= yield %>
-
-</body>
+  <body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+        <%= yield %>
+      </section>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
 </html>
